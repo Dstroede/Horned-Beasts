@@ -27,7 +27,7 @@ handleFavorites = () => {
              <Card.Text>
              <p>{this.props.description}</p>
              </Card.Text>
-               <Button onClick={this.handleFavorites}> 💘  {this.state.favorites} Favorites</Button>
+               <Button onClick={this.handleFavorites}><span role="img" aria-label="heart">💘</span> {this.state.favorites} Favorites</Button>
                
            </Card.Body>
        </Card>
