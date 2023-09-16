@@ -8,7 +8,6 @@ import { Container, Row } from "react-bootstrap";
 class Gallery extends React.Component {
     render () {
 
-
         return (
         <main>
           <Container id='cards'>
@@ -16,7 +15,11 @@ class Gallery extends React.Component {
                 {this.props.beastData.map((beast, index)=>
                   <HornedBeast
                     beast={beast}
-                    key={index}
+                    key={beast._id}
+                    title={beast.title}
+                    image_url={beast.image_url}
+                    keyword={beast.keyword}
+                    description={beast.description}
                     setSelectBeast={this.props.setSelectBeast}
                     showBeastModal={this.props.showBeastModal}
                  />

@@ -36,6 +36,7 @@ render () {
     showModal= {this.state.showModal}
     hideBeastModal ={this.hideBeastModal}
     beast= {this.state.beast}
+  
     />
   </>
   )

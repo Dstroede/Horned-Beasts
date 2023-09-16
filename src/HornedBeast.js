@@ -29,13 +29,13 @@ handleFavorites = () => {
             >
           <Card.Img
             variant="top" 
-            src= {this.props.beast.image_url}
-            alt= {this.props.beast.title} 
+            src= {this.props.image_url}
+            alt= {this.props.title} 
             />
           <Card.Body>
-             <Card.Title>{this.props.beast.keyword}</Card.Title>
+             <Card.Title>{this.props.keyword}</Card.Title>
              <Card.Text>
-             <p>{this.props.beast.description}</p>
+             <p>{this.props.description}</p>
              </Card.Text>
                <Button onClick={this.handleFavorites}><span role="img" aria-label="heart">💘</span> {this.state.favorites} Favorites</Button>
                
