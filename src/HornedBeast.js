@@ -24,18 +24,20 @@ handleFavorites = () => {
     render() {
       return (
         <Card 
-            style={{ width: '15rem' }}
-            onClick={this.handleModal}
+            style={{ width: '15rem', margin: '20px'}}
+    
             >
           <Card.Img
             variant="top" 
+            onClick={this.handleModal}
             src= {this.props.beast.image_url}
             alt= {this.props.beast.title} 
+            style={{ width: 'auto', height: 'auto'}}
             />
           <Card.Body>
              <Card.Title>{this.props.beast.keyword}</Card.Title>
              <Card.Text>
-             <p>{this.props.beast.description}</p>
+             <p> This Beast Has {this.props.beast.horns} Horn(s)</p>
              </Card.Text>
                <Button onClick={this.handleFavorites}><span role="img" aria-label="heart">💘</span> {this.state.favorites} Favorites</Button>
                
